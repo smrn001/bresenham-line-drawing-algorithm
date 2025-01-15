@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Canvas from "./Canvas";
 import InputForm from "./InputForm";
 import About from "./About";
+import Footer from "./Footer";
 
 const App = () => {
   const [startPoint, setStartPoint] = useState({ x: 0, y: 0 });
@@ -89,6 +90,7 @@ const App = () => {
         {showAbout ? "About ↑ " : "  About  ↓ "}
       </button>
       {showAbout && <About />}
+      <Footer />
     </div>
   );
 };
